@@ -33,7 +33,12 @@ const ListItemComponent = (id, initColor) => {
           ]);
         }
       }}
-      style={{ color: selectors[0] <= id && id <= selectors[1] ? '#ff06b7' : 'black' }}
+      style={{
+        color:
+          selectors[0] !== null && selectors[0] <= id && id <= selectors[1]
+            ? '#ff06b7'
+            : 'black',
+      }}
       key={id}
     >
       {id} item{' '}
