@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
-import useGenerateRandomColor from './useGenerateRandomColor';
 import { ColorContext } from './ColorContext';
-import { SelectorsContext } from './SelectorsContext';
 import ListItemComponent from './ListItemComponent';
 
 const ColorList = () => {
